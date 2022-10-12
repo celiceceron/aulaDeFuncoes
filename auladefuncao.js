@@ -5,8 +5,11 @@ console a sseguinte mensagem:
 Olá, agora são 10:20:43 PM
 */
 
+function queHorasSão(){
+    const horaAtual = new Date();
+    const horaConvertida = horaAtual.toLocaleTimeString();
 
-const horaAtual = new Date();
-console.log("Olá, agora são " + horaAtual);
+    console.log("Olá, agora são " + horaConvertida);
+}
 
-
+queHorasSão();
