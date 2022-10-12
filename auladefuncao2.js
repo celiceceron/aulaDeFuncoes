@@ -4,13 +4,23 @@ Toda vez que eu rodar essa função ela vai gerar um número aleatório
 de 1 até 10.
 */
 
+
+function debug(variavel){
+    const tipo = typeof variavel
+
+    console.log(`DEBUG] Valor: ${variavel} valorDaVarial - Tipo: ${tipo}`);
+}
+
 function numeroAleatorio(){
     const min = 0;
     const max = 10;
     const numero = Math.random()*(max - min) + min;
-    const numeroInteiro = parseInt(numero);
+    const numeroInteiro = Math.floor(numero);
 
-    console.log(numero);
+    debug (min);
+    debug (max);
+    debug (numero);
+    debug(numeroInteiro);
 
     return numeroInteiro;
 }
