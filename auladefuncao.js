@@ -1,4 +1,12 @@
-const horaAtual = new Date();
+/* Função sem parâmetro e sem retorno
+1) Função que horas são?
+Vamos criar uma função que quando chamada ela mostra no 
+console a sseguinte mensagem: 
+Olá, agora são 10:20:43 PM
+*/
 
-horaAtual = horaAtual.toLocaleDateString();
-console.log("olá, agora são" + horaAtual);
+
+const horaAtual = new Date();
+console.log("Olá, agora são " + horaAtual);
+
+
